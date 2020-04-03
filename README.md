@@ -4,6 +4,9 @@ Cucumber projet en utilisons le langage Java.
 C'etait pour le but de decouvrir le frameWork Cucumber et Rest Assured ,Dans ce projet en réalise le  test de l'api https://jsonplaceholder.typicode.com .
 
 
+* Cucumber Java
+* Junit
+* Rest Assured
 # Feature File 
 
 ```
