@@ -23,9 +23,9 @@ Feature: Search Functionality
 	@testthis
 	Scenario: Test API
 	  Given I have API
-    When I Hit API with product id as 1
+    When I Hit API with user id as 1
 		Then status code comes as 200
-		And json body contain product id as 1
+		And json body contain user id as 1
 	
 	
 	
