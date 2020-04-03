@@ -1,7 +1,7 @@
 # CucumberApiTestJV
 
 Cucumber projet en utilisons le langage Java.
-C'etait pour le but de decouvrir le frameWork Cucumber,Dans ce projet en réalise le  test de l'api https://jsonplaceholder.typicode.com .
+C'etait pour le but de decouvrir le frameWork Cucumber et Rest Assured ,Dans ce projet en réalise le  test de l'api https://jsonplaceholder.typicode.com .
 
 # Feature File 
 
