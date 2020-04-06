@@ -16,7 +16,7 @@ import io.restassured.specification.RequestSpecification;
 public class StepDef_API {
 	String baseUri = "https://jsonplaceholder.typicode.com";
 	RequestSpecification _REQ_SPEC;
-	Response _RESP;
+	Response _RESPs;
 	ValidatableResponse _VALIDATABLE_RESP;
 	
 	@Given("I have API")
