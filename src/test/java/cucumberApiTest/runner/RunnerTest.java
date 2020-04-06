@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		glue="stepdefs",
 		plugin=  { 
 				"pretty",
-				"html:test-output/cucumberreport"
+				"html:test-output/cucumberreport1"
 		},
 		tags = "@testthis"
 

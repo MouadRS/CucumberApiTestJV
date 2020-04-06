@@ -1,6 +1,6 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/myFirstFeature.feature");
 formatter.feature({
-  "name": "Search Functionality",
+  "name": "Feature Name",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -62,6 +62,16 @@ formatter.step({
 });
 formatter.match({
   "location": "StepDef_API.json_body_contain_user_id_as(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "json body contain name id as \"Leanne Graham\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDef_API.json_body_contain_name_id_as(String)"
 });
 formatter.result({
   "status": "passed"

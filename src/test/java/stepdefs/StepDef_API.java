@@ -8,6 +8,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
@@ -35,6 +36,7 @@ public class StepDef_API {
 	public void i_Hit_API_with_user_id_as(Integer int1) {
 		_RESP = _REQ_SPEC.when().get("/users/" + int1);
 		scn.write("Response returned as: " + _RESP.asString());
+		
 	}
 
 	@Then("status code comes as {int}")
@@ -43,9 +45,19 @@ public class StepDef_API {
 		_VALIDATABLE_RESP.statusCode(int1);
 	}
 
+	
 	@Then("json body contain user id as {int}")
 	public void json_body_contain_user_id_as(Integer int1) {
 		_VALIDATABLE_RESP.body("id", equalTo(int1));
 	}
+	
+	@Then("json body contain name id as {string}")
+	public void json_body_contain_name_id_as(String string) {
+		
+		_VALIDATABLE_RESP.body("name",equalTo(string));
+		
+	    
+	}
+	
 
 }
