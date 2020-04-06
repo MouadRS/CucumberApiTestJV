@@ -18,13 +18,6 @@ public class StepDef_API {
 	RequestSpecification _REQ_SPEC;
 	Response _RESP;
 	ValidatableResponse _VALIDATABLE_RESP;
-	//_VALIDATABLE_RESP.assertThat().body("id", equalTo(9132294));
-
-	Scenario scn;
-	@Before
-	public void BeforeHook(Scenario s) {
-		this.scn = s;
-	}
 	
 	@Given("I have API")
 	public void i_have_API() {
@@ -35,7 +28,7 @@ public class StepDef_API {
 	@When("I Hit API with user id as {int}")
 	public void i_Hit_API_with_user_id_as(Integer int1) {
 		_RESP = _REQ_SPEC.when().get("/users/" + int1);
-		scn.write("Response returned as: " + _RESP.asString());
+		
 		
 	}
 
